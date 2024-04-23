@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", function() {
+      const addToCartButtons = document.querySelectorAll('.product button');
+        const cartItemCount = document.getElementById('cart-item-count');
+
+          let itemCount = 0;
+
+            addToCartButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                              itemCount++;
+                                    updateCartItemCount(itemCount);
+                    });
+            });
+
+              function updateCartItemCount(count) {
+                    cartItemCount.innerText = count;
+              }
+});
+              }
+                    })
+            })
+})
